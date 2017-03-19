@@ -190,7 +190,7 @@
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
 
-   "componentRender": {
+  "componentRender": {
     "prefix": "ren",
     "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}",
     "description": "When called, it should examine this.props and this.state and return a single child element."
