@@ -21,10 +21,10 @@
   ],
   "contributes": {
     "snippets": [
-	  {
+      {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
-	  },
+      },
       {
         "language": "javascript",
         "path": "./snippets/snippets.json"
@@ -42,5 +42,9 @@
         "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
   }
 }
