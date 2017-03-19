@@ -18,24 +18,24 @@ In order to install this extension, just search for `React Ecosystem Snippets` f
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
-| Trigger  | Content |
-| -------: | ------- |
-| `rcc→`   | class component default export skeleton |
-| `rjcc→`  | class component skeleton without import of default export |
-| `rccp→`  | class component default export skeleton with prop types |
-| `rjccp→` | class component skeleton with prop types, without import or default export |
-| `rmcc→`  | mobx class component default export skeleton |
-| `rmjcc→` | mobx class component skeleton without import or default export |
-| `rmccp→` | mobx class component default export skeleton with prop types |
-| `rmjccp→`| mobx class component skeleton with prop types, without import or default export |
-| `rsc→`   | inline SFC default export skeleton |
-| `rscb→`  | SFC default export skeleton |
-| `rjsc→`  | inline SFC without import or export |
-| `rjscb→` | SFC without import or export |
-| `rscp→`  | inline SFC with prop types default export skeleton |
-| `rscbp→` | SFC with prop types default export skeleton |
-| `rjscp→` | inline SFC with prop types, without import or export |
-| `rjscbp→`| SFC with prop types, without import or export |
+| Trigger   | Content |
+| -------:  | ------- |
+| `rcc→`    | class component default export skeleton |
+| `rjcc→`   | class component skeleton without import of default export |
+| `rccp→`   | class component default export skeleton with prop types |
+| `rjccp→`  | class component skeleton with prop types, without import or default export |
+| `rmcc→`   | mobx class component default export skeleton |
+| `rmjcc→`  | mobx class component skeleton without import or default export |
+| `rmccp→`  | mobx class component default export skeleton with prop types |
+| `rmjccp→` | mobx class component skeleton with prop types, without import or default export |
+| `rsc→`    | inline SFC default export skeleton |
+| `rscb→`   | SFC default export skeleton |
+| `rjsc→`   | inline SFC without import or export |
+| `rjscb→`  | SFC without import or export |
+| `rscp→`   | inline SFC with prop types default export skeleton |
+| `rscbp→`  | SFC with prop types default export skeleton |
+| `rjscp→`  | inline SFC with prop types, without import or export |
+| `rjscbp→` | SFC with prop types, without import or export |
 | `rmsc→`   | mobx inline SFC default export skeleton |
 | `rmscb→`  | mobx SFC default export skeleton |
 | `rmjsc→`  | mobx inline SFC without import or export |
@@ -44,19 +44,19 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmscbp→` | mobx SFC with prop types default export skeleton |
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
-| `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-| `con→`   | class default constructor with props|
-| `conc→`  | class default constructor with props and context |
-| `cwm→`   | `componentWillMount method` |
-| `cdm→`   | `componentDidMount method` |
-| `cwr→`   | `componentWillReceiveProps method` |
-| `scu→`   | `shouldComponentUpdate method` |
-| `cwup→`  | `componentWillUpdate method` |
-| `cdup→`  | `componentDidUpdate method` |
-| `cwun→`  | `componentWillUnmount method` |
-| `ren→`   | `render method` |
-| `sst→`   | `this.setState with object as parameter` |
-| `sstf→`   | `this.setState with function as parameter` |
+| `rcfc→`   | class component skeleton that contains all the lifecycle methods |
+| `con→`    | class default constructor with props|
+| `conc→`   | class default constructor with props and context |
+| `cwm→`    | componentWillMount method |
+| `cdm→`    | componentDidMount method |
+| `cwr→`    | componentWillReceiveProps method |
+| `scu→`    | shouldComponentUpdate method |
+| `cwup→`   | componentWillUpdate method |
+| `cdup→`   | componentDidUpdate method |
+| `cwun→`   | componentWillUnmount method |
+| `ren→`    | render method |
+| `sst→`    | this.setState with object as parameter |
+| `sstf→`   | this.setState with function as parameter |
 
 The following table lists all the snippets that can be used for prop types.
 Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
@@ -66,34 +66,34 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | Trigger  | Content |
 | -------: | ------- |
 | `rpt→`   | empty propTypes declaration |
-| `pta→`   | `PropTypes.array,` |
-| `ptar→`  | `PropTypes.array.isRequired,` |
-| `ptb→`   | `PropTypes.bool,` |
-| `ptbr→`  | `PropTypes.bool.isRequired,` |
-| `ptf→`   | `PropTypes.func,` |
-| `ptfr→`  | `PropTypes.func.isRequired,` |
-| `ptn→`   | `PropTypes.number,` |
-| `ptnr→`  | `PropTypes.number.isRequired,` |
-| `pto→`   | `PropTypes.object.,` |
-| `ptor→`  | `PropTypes.object.isRequired,` |
-| `pts→`   | `PropTypes.string,` |
-| `ptsr→`  | `PropTypes.string.isRequired,` |
-| `ptnd→`  | `PropTypes.node,` |
-| `ptndr→` | `PropTypes.node.isRequired,` |
-| `ptel→`  | `PropTypes.element,` |
-| `ptelr→` | `PropTypes.element.isRequired,` |
-| `pti→`   | `PropTypes.instanceOf(ClassName),` |
-| `ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,` |
-| `pte→`   | `PropTypes.oneOf(['News', 'Photos']),` |
-| `pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,` |
-| `ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),` |
-| `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,` |
-| `ptao→`  | `PropTypes.arrayOf(PropTypes.number),` |
-| `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
-| `ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
-| `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
-| `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
-| `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
+| `pta→`   | PropTypes.array |
+| `ptar→`  | PropTypes.array.isRequired |
+| `ptb→`   | PropTypes.bool |
+| `ptbr→`  | PropTypes.bool.isRequired |
+| `ptf→`   | PropTypes.func |
+| `ptfr→`  | PropTypes.func.isRequired |
+| `ptn→`   | PropTypes.number |
+| `ptnr→`  | PropTypes.number.isRequired |
+| `pto→`   | PropTypes.object. |
+| `ptor→`  | PropTypes.object.isRequired |
+| `pts→`   | PropTypes.string |
+| `ptsr→`  | PropTypes.string.isRequired |
+| `ptnd→`  | PropTypes.node |
+| `ptndr→` | PropTypes.node.isRequired |
+| `ptel→`  | PropTypes.element |
+| `ptelr→` | PropTypes.element.isRequired |
+| `pti→`   | PropTypes.instanceOf(ClassName) |
+| `ptir→`  | PropTypes.instanceOf(ClassName).isRequired |
+| `pte→`   | PropTypes.oneOf(['News', 'Photos']) |
+| `pter→`  | PropTypes.oneOf(['News', 'Photos']).isRequired |
+| `ptet→`  | PropTypes.oneOfType([PropTypes.string, PropTypes.number]) |
+| `ptetr→` | PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired |
+| `ptao→`  | PropTypes.arrayOf(PropTypes.number) |
+| `ptaor→` | PropTypes.arrayOf(PropTypes.number).isRequired |
+| `ptoo→`  | PropTypes.objectOf(PropTypes.number) |
+| `ptoor→` | PropTypes.objectOf(PropTypes.number).isRequired |
+| `ptsh→`  | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}) |
+| `ptshr→` | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired |
 
 Coming soon:
 
