@@ -1,9 +1,9 @@
 {
-  "name": "ReactSnippets",
-  "description": "Code snippets for Reactjs development in ES6 syntax",
-  "version": "1.2.1",
+  "name": "react-ecosystem-snippets",
+  "description": "Code snippets for Reactjs development",
+  "version": "0.0.1",
   "displayName": "Reactjs code snippets",
-  "publisher": "xabikos",
+  "publisher": "Adam Rackis",
   "icon": "images/react.png",
   "galleryBanner": {
     "theme": "light"
@@ -11,10 +11,10 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xabikos/vscode-react"
+    "url": "https://github.com/arackaf/vscode-react"
   },
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "*.*.*"
   },
   "categories": [
     "Snippets"
