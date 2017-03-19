@@ -2,24 +2,18 @@
 ## VS Code Reactjs snippets
 -------------------
 
-This is a fork from https://github.com/xabikos/vscode-react. My version modifies the export styles to be inline, adds more React snippets to, and
-begins to add snippets for the surrounding React ecosystem, for now MobX, with Redux coming soon.
+This is a fork from https://github.com/xabikos/vscode-react. My version modifies the export styles to be inline; adds more React snippets—options for inline (braceless) SFCs, more options for React skeletons without import or export statements, more options for React components with prop types; and begins to add snippets for the surrounding React ecosystem, for now just MobX, with Redux coming soon.
 
 ---
 
 ## Note
 
 This project is still beta; it's not fully tested.  I still need to make one last, final pass on all the snippets, but feel free to install it now
-and give it a try—and let me know if you see any problems!
+and give it a try—let me know if you see any problems!
 
 ## Installation
 
-In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
-There you have either the option to show the already installed snippets or install new ones.
-
-## Usage
-When installing the extension React development could be really fun
-![create react component](images/component.gif)
+In order to install this extension, just search for `React Ecosystem Snippets` from the extensions pane.
 
 
 ## Snippets
@@ -55,7 +49,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
-| `est→`   | empty state object |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
 | `cwr→`   | `componentWillReceiveProps method` |
@@ -103,3 +96,7 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
 | `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
+
+Coming soon:
+
+Full listing of the code all these snippets generate ...

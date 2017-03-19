@@ -7,7 +7,7 @@
   "reactJustClassCompoment": {
     "prefix": "rjcc",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
-    "description": "Creates a React component class"
+    "description": "Creates just a React component class"
   },
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
@@ -17,7 +17,7 @@
   "reactJustClassCompomentProps": {
     "prefix": "rjccp",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n$2\n};",
-    "description": "Creates a React component class with PropTypes"
+    "description": "Creates just a React component class with PropTypes"
   },
 
   "reactMobxClassCompoment": {
@@ -28,7 +28,7 @@
   "reactMobxJustClassCompoment": {
     "prefix": "rmjcc",
     "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
-    "description": "Creates a MobX React component class"
+    "description": "Creates just a MobX React component class"
   },
   "reactMobxClassCompomentProps": {
     "prefix": "rmccp",
@@ -38,7 +38,7 @@
   "reactMobxJustClassCompomentProps": {
     "prefix": "rmjccp",
     "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\t$2\n};",
-    "description": "Creates a MobX React component class with PropTypes"
+    "description": "Creates just a MobX React component class with PropTypes"
   },
   
 
@@ -62,12 +62,12 @@
   "reactJustInlineStateless": {
     "prefix": "rjsc",
     "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);",
-    "description": "Creates an inline SFC"
+    "description": "Creates just an inline SFC"
   },
   "reactJustStateless": {
     "prefix": "rjscb",
     "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};",
-    "description": "Creates an SFC"
+    "description": "Creates just an SFC"
   },
 
   "reactStatelessProps": {
@@ -83,12 +83,12 @@
   "reactJustInlineStatelessProps": {
     "prefix": "rjscp",
     "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
-    "description": "Creates an inline SFC with PropTypes"
+    "description": "Creates just an inline SFC with PropTypes"
   },
   "reactJustStatelessProps": {
     "prefix": "rjscbp",
     "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
-    "description": "Creates an SFC with PropTypes"
+    "description": "Creates just an SFC with PropTypes"
   },
 
 
@@ -106,12 +106,12 @@
   "reactJustMobxInlineStateless": {
     "prefix": "rmjsc",
     "body": "const ${1:componentName} = observer((${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));",
-    "description": "Creates an inline MobX SFC"
+    "description": "Creates just an inline MobX SFC"
   },
   "reactJustMobxStateless": {
     "prefix": "rmjscb",
     "body": "const ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
-    "description": "Creates a MobX SFC"
+    "description": "Creates just a MobX SFC"
   },
   "reactMobxStatelessProps": {
     "prefix": "rmscp",
@@ -126,12 +126,12 @@
   "reactJustMobxInlineStatelessProps": {
     "prefix": "rmjscp",
     "body": "const ${1:componentName} = observer((${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\n",
-    "description": "Creates an inline MobX SFC with prop types"
+    "description": "Creates just an inline MobX SFC with prop types"
   },
   "reactJustMobxStatelessProps": {
     "prefix": "rmjscbp",
     "body": "const ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\n",
-    "description": "Creates a MobX SFC with prop types"
+    "description": "Creates just a MobX SFC with prop types"
   },  
 
 
@@ -334,7 +334,7 @@
     "body": "PropTypes.arrayOf($0).isRequired,",
     "description": "An array of a certain type required"
   },
-    "propTypeObjectOf": {
+  "propTypeObjectOf": {
     "prefix": "ptoo",
     "body": "PropTypes.objectOf($0),",
     "description": "An object with property values of a certain type"
