@@ -1,8 +1,8 @@
 {
   "name": "react-ecosystem-snippets",
   "description": "Code snippets for Reactjs development",
-  "version": "0.0.1",
-  "displayName": "Reactjs code snippets",
+  "version": "0.0.3",
+  "displayName": "React Ecosystem Code Snippets",
   "publisher": "adamrackis",
   "icon": "images/react.png",
   "galleryBanner": {
@@ -14,7 +14,7 @@
     "url": "https://github.com/arackaf/vscode-react"
   },
   "engines": {
-    "vscode": "*.*.*"
+    "vscode": "1.x.x"
   },
   "categories": [
     "Snippets"

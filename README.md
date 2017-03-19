@@ -2,16 +2,10 @@
 ## VS Code Reactjs snippets
 -------------------
 
-This is a fork from https://github.com/xabikos/vscode-react. My edition modifies the export styles to be inline, adds more React snippets to, and
+This is a fork from https://github.com/xabikos/vscode-react. My version modifies the export styles to be inline, adds more React snippets to, and
 begins to add snippets for the surrounding React ecosystem, for now MobX, with Redux coming soon.
 
 ---
-
-<!---
-[![Version](http://vsmarketplacebadge.apphb.com/version/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Installs](http://vsmarketplacebadge.apphb.com/installs/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
---->
 
 ## Note
 
@@ -59,7 +53,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-| `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
 | `est→`   | empty state object |
@@ -72,10 +65,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `cwun→`  | `componentWillUnmount method` |
 | `ren→`   | `render method` |
 | `sst→`   | `this.setState with object as parameter` |
-| `ssf→`   | `this.setState with function as parameter` |
-| `props→` | `this.props` |
-| `state→` | `this.state` |
-| `bnd→`   | `binds the this of method inside the constructor` |
+| `sstf→`   | `this.setState with function as parameter` |
 
 The following table lists all the snippets that can be used for prop types.
 Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
@@ -84,6 +74,7 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 | Trigger  | Content |
 | -------: | ------- |
+| `rpt→`   | empty propTypes declaration |
 | `pta→`   | `PropTypes.array,` |
 | `ptar→`  | `PropTypes.array.isRequired,` |
 | `ptb→`   | `PropTypes.bool,` |
