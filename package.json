@@ -3,7 +3,7 @@
   "description": "Code snippets for Reactjs development",
   "version": "0.0.1",
   "displayName": "Reactjs code snippets",
-  "publisher": "Adam Rackis",
+  "publisher": "adamrackis",
   "icon": "images/react.png",
   "galleryBanner": {
     "theme": "light"
