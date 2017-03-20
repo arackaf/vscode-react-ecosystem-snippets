@@ -65,7 +65,6 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rpt→`   | empty propTypes declaration |
 | `pta→`   | PropTypes.array |
 | `ptar→`  | PropTypes.array.isRequired |
 | `ptb→`   | PropTypes.bool |
@@ -95,6 +94,794 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | `ptsh→`  | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}) |
 | `ptshr→` | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired |
 
-Coming soon:
 
-Full listing of the code all these snippets generate ...
+## The Generated Code
+
+This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and `|` indicates where your cursor will wind up, when finished providing those values.rcc:
+
+```javascript
+import React, {Component} from 'react';
+
+export default class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rjcc:
+
+```javascript
+class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rccp:
+
+```javascript
+import React, {Component, PropTypes} from 'react';
+
+export default class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+
+YourComponentName.propTypes = {
+    
+};
+```
+---
+
+rjccp:
+
+```javascript
+class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+
+YourComponentName.propTypes = {
+    
+};
+```
+---
+
+rmcc:
+
+```javascript
+import React, {Component, PropTypes} from 'react';
+import {observer} from 'mobx-react';
+
+@observer
+export default class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rmjcc:
+
+```javascript
+@observer
+class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rmccp:
+
+```javascript
+import React, {Component, PropTypes} from 'react';
+import {observer} from 'mobx-react';
+
+@observer
+export default class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+
+YourComponentName.propTypes = {
+    
+};
+```
+---
+
+rmjccp:
+
+```javascript
+@observer
+class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+
+YourComponentName.propTypes = {
+    
+};
+```
+---
+
+rsc:
+
+```javascript
+import React from 'react';
+
+export default ({yourProps}) => (
+    <div>
+        |
+    </div>
+);
+```
+---
+
+rscb:
+
+```javascript
+import React from 'react';
+
+export default ({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+};
+```
+---
+
+rjsc:
+
+```javascript
+const YourComponentName = ({yourProps}) => (
+    <div>
+        |
+    </div>
+);
+```
+---
+
+rjscb:
+
+```javascript
+const YourComponentName = ({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+};
+```
+---
+
+rscp:
+
+```javascript
+import React, {PropTypes} from 'react';
+
+const YourComponentName = ({yourProps}) => (
+    <div>
+        |
+    </div>
+);
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rscbp:
+
+```javascript
+import React, {PropTypes} from 'react';
+
+const YourComponentName = ({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+};
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rjscp:
+
+```javascript
+const YourComponentName = ({yourProps}) => (
+    <div>
+        |
+    </div>
+);
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rjscbp:
+
+```javascript
+const YourComponentName = ({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+};
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rmsc:
+
+```javascript
+import React from 'react';
+import {observer} from 'mobx-react';
+
+export default observer(({yourProps}) => (
+    <div>
+        |
+    </div>
+));
+```
+---
+
+rmscb:
+
+```javascript
+import React from 'react';
+import {observer} from 'mobx-react';
+
+export default observer(({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+});
+```
+---
+
+rmjsc:
+
+```javascript
+const YourComponentName = observer(({yourProps}) => (
+    <div>
+        |
+    </div>
+));
+```
+---
+
+rmjscb:
+
+```javascript
+const YourComponentName = observer(({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+});
+```
+---
+
+rmscp:
+
+```javascript
+import React from 'react';
+import {observer} from 'mobx-react';
+
+const YourComponentName = observer(({yourProps}) => (
+    <div>
+        |
+    </div>
+));
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rmscbp:
+
+```javascript
+import React from 'react';
+import {observer} from 'mobx-react';
+
+const YourComponentName = observer(({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+});
+
+YourComponentName.propTypes = {
+    
+};
+
+export default YourComponentName;
+```
+---
+
+rmjscp:
+
+```javascript
+const YourComponentName = observer(({yourProps}) => (
+    <div>
+        |
+    </div>
+));
+
+YourComponentName.propTypes = {
+    
+};
+
+
+```
+---
+
+rmjscbp:
+
+```javascript
+const YourComponentName = observer(({yourProps}) => {
+    return (
+        <div>
+            |
+        </div>
+    );
+});
+
+YourComponentName.propTypes = {
+    
+};
+
+
+```
+---
+
+rcfc:
+
+```javascript
+import React, {Component, PropTypes} from 'react';
+
+export default class YourComponentName extends Component {
+    constructor(props) {
+        super(props);
+
+    }
+
+    componentWillMount() {
+
+    }
+
+    componentDidMount() {
+
+    }
+
+    componentWillReceiveProps(nextProps) {
+
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+
+    }
+
+    componentWillUnmount() {
+
+    }
+
+    render() {
+        return (
+            <div>
+
+            </div>
+        );
+    }
+}
+
+YourComponentName.propTypes = {
+
+};
+```
+---
+
+con:
+
+```javascript
+constructor(props) {
+    super(props);
+    |
+}
+
+```
+---
+
+conc:
+
+```javascript
+constructor(props, context) {
+    super(props, context);
+    |
+}
+
+```
+---
+
+cwm:
+
+```javascript
+
+componentWillMount() {
+    |
+}
+
+```
+---
+
+cdm:
+
+```javascript
+componentDidMount() {
+    |
+}
+
+```
+---
+
+cwr:
+
+```javascript
+componentWillReceiveProps(nextProps) {
+    |
+}
+
+```
+---
+
+scu:
+
+```javascript
+shouldComponentUpdate(nextProps, nextState) {
+    |
+}
+
+```
+---
+
+cwup:
+
+```javascript
+componentWillUpdate(nextProps, nextState) {
+    |
+}
+
+```
+---
+
+cdup:
+
+```javascript
+componentDidUpdate(prevProps, prevState) {
+    |
+}
+
+```
+---
+
+cwun:
+
+```javascript
+componentWillUnmount() {
+    |
+}
+
+```
+---
+
+ren:
+
+```javascript
+render() {
+    return (
+        <div>
+            |
+        </div>
+    );
+}
+```
+---
+
+sst:
+
+```javascript
+this.setState(|);
+```
+---
+
+sstf:
+
+```javascript
+this.setState((state, props) => { return { | }});
+
+```
+---
+
+pta:
+
+```javascript
+PropTypes.array,
+```
+---
+
+ptar:
+
+```javascript
+PropTypes.array.isRequired,
+```
+---
+
+ptb:
+
+```javascript
+PropTypes.bool,
+```
+---
+
+ptbr:
+
+```javascript
+PropTypes.bool.isRequired,
+```
+---
+
+ptf:
+
+```javascript
+PropTypes.func,
+```
+---
+
+ptfr:
+
+```javascript
+PropTypes.func.isRequired,
+```
+---
+
+ptn:
+
+```javascript
+PropTypes.number,
+```
+---
+
+ptnr:
+
+```javascript
+PropTypes.number.isRequired,
+```
+---
+
+pto:
+
+```javascript
+PropTypes.object,
+```
+---
+
+ptor:
+
+```javascript
+PropTypes.object.isRequired,
+```
+---
+
+pts:
+
+```javascript
+PropTypes.string,
+```
+---
+
+ptsr:
+
+```javascript
+PropTypes.string.isRequired,
+```
+---
+
+ptnd:
+
+```javascript
+PropTypes.node,
+```
+---
+
+ptndr:
+
+```javascript
+PropTypes.node.isRequired,
+```
+---
+
+ptel:
+
+```javascript
+PropTypes.element,
+```
+---
+
+ptelr:
+
+```javascript
+PropTypes.element.isRequired,
+```
+---
+
+pti:
+
+```javascript
+PropTypes.instanceOf(|),
+```
+---
+
+ptir:
+
+```javascript
+PropTypes.instanceOf(|).isRequired,
+```
+---
+
+pte:
+
+```javascript
+PropTypes.oneOf(['|']),
+```
+---
+
+pter:
+
+```javascript
+PropTypes.oneOf(['|']).isRequired,
+```
+---
+
+ptet:
+
+```javascript
+PropTypes.oneOfType([
+    |
+]),
+```
+---
+
+ptetr:
+
+```javascript
+PropTypes.oneOfType([
+    |
+]).isRequired,
+```
+---
+
+ptao:
+
+```javascript
+PropTypes.arrayOf(|),
+```
+---
+
+ptaor:
+
+```javascript
+PropTypes.arrayOf(|).isRequired,
+```
+---
+
+ptoo:
+
+```javascript
+PropTypes.objectOf(|),
+```
+---
+
+ptoor:
+
+```javascript
+PropTypes.objectOf(|).isRequired,
+```
+---
+
+ptsh:
+
+```javascript
+PropTypes.shape({
+    |
+}),
+```
+---
+
+ptshr:
+
+```javascript
+PropTypes.shape({
+    |
+}).isRequired,
+```
+---
