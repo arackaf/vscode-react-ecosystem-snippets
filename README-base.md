@@ -4,11 +4,6 @@ This is a fork from https://github.com/xabikos/vscode-react. My version modifies
 
 ---
 
-## Note
-
-This project is still beta; it's not fully tested.  I still need to make one last, final pass on all the snippets, but feel free to install it now
-and give it a try—let me know if you see any problems!
-
 ## Installation
 
 In order to install this extension, just search for `React Ecosystem Snippets` from the extensions pane.
