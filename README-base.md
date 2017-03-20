@@ -97,4 +97,5 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 ## The Generated Code
 
-This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and `|` indicates where your cursor will wind up, when finished providing those values.
+This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and | indicates where your cursor will wind up, when finished providing those values.
+

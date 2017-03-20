@@ -1,7 +1,7 @@
 {
   "name": "react-ecosystem-snippets",
   "description": "Code snippets for Reactjs development",
-  "version": "0.0.6",
+  "version": "0.0.11",
   "displayName": "React Ecosystem Snippets",
   "publisher": "adamrackis",
   "icon": "images/react.png",
@@ -46,5 +46,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1"
+  },
+  "scripts": { 
+    "deploy": "node buildDocExamples && vsce publish && npm publish"
   }
 }

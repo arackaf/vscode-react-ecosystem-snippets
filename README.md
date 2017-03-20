@@ -97,7 +97,9 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 ## The Generated Code
 
-This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and `|` indicates where your cursor will wind up, when finished providing those values.rcc:
+This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and | indicates where your cursor will wind up, when finished providing those values.
+
+rcc:
 
 ```javascript
 import React, {Component} from 'react';
@@ -172,7 +174,7 @@ YourComponentName.propTypes = {
 rmcc:
 
 ```javascript
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import {observer} from 'mobx-react';
 
 @observer
@@ -432,7 +434,7 @@ const YourComponentName = observer(({yourProps}) => {
 rmscp:
 
 ```javascript
-import React from 'react';
+import React, {PropTypes} from 'react';
 import {observer} from 'mobx-react';
 
 const YourComponentName = observer(({yourProps}) => (
@@ -452,7 +454,7 @@ export default YourComponentName;
 rmscbp:
 
 ```javascript
-import React from 'react';
+import React, {PropTypes} from 'react';
 import {observer} from 'mobx-react';
 
 const YourComponentName = observer(({yourProps}) => {
