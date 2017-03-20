@@ -45,8 +45,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
 | `rcfc→`   | class component skeleton that contains all the lifecycle methods |
-| `con→`    | class default constructor with props|
-| `conc→`   | class default constructor with props and context |
+| `ctor→`    | class default constructor with props|
 | `cwm→`    | componentWillMount method |
 | `cdm→`    | componentDidMount method |
 | `cwr→`    | componentWillReceiveProps method |

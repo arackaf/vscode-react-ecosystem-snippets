@@ -1,7 +1,7 @@
 var docsItems = [
     'rcc', 'rjcc', 'rccp', 'rjccp', 'rmcc', 'rmjcc', 'rmccp', 'rmjccp', 'rsc', 'rscb', 'rjsc', 'rjscb', 'rscp',   
     'rscbp', 'rjscp', 'rjscbp', 'rmsc', 'rmscb', 'rmjsc', 'rmjscb', 'rmscp', 'rmscbp', 'rmjscp', 'rmjscbp', 
-    'rcfc', 'con', 'conc', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 'ren', 'sst', 'sstf',
+    'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 'ren', 'sst', 'sstf',
     'pta', 'ptar', 'ptb', 'ptbr', 'ptf', 'ptfr', 'ptn', 'ptnr', 'pto', 'ptor', 'pts', 'ptsr',
     'ptnd', 'ptndr', 'ptel', 'ptelr', 'pti', 'ptir', 'pte', 'pter', 'ptet', 'ptetr', 'ptao', 'ptaor',
     'ptoo', 'ptoor', 'ptsh', 'ptshr'
