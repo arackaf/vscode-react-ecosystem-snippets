@@ -65,7 +65,6 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rpt→`   | empty propTypes declaration |
 | `pta→`   | PropTypes.array |
 | `ptar→`  | PropTypes.array.isRequired |
 | `ptb→`   | PropTypes.bool |
@@ -95,6 +94,7 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | `ptsh→`  | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}) |
 | `ptshr→` | PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired |
 
-Coming soon:
 
-Full listing of the code all these snippets generate ...
+## The Generated Code
+
+This is what the snippets above actually generate. `YourComponentName` and `yourProps` are both prompted for in the generated snippet, and `|` indicates where your cursor will wind up, when finished providing those values.
