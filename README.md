@@ -564,7 +564,6 @@ constructor(props) {
     super(props);
     |
 }
-
 ```
 ---
 
@@ -575,7 +574,6 @@ cwm:
 componentWillMount() {
     |
 }
-
 ```
 ---
 
@@ -585,7 +583,6 @@ cdm:
 componentDidMount() {
     |
 }
-
 ```
 ---
 
@@ -595,7 +592,6 @@ cwr:
 componentWillReceiveProps(nextProps) {
     |
 }
-
 ```
 ---
 
@@ -605,7 +601,6 @@ scu:
 shouldComponentUpdate(nextProps, nextState) {
     |
 }
-
 ```
 ---
 
@@ -615,7 +610,6 @@ cwup:
 componentWillUpdate(nextProps, nextState) {
     |
 }
-
 ```
 ---
 
@@ -625,7 +619,6 @@ cdup:
 componentDidUpdate(prevProps, prevState) {
     |
 }
-
 ```
 ---
 
@@ -635,7 +628,6 @@ cwun:
 componentWillUnmount() {
     |
 }
-
 ```
 ---
 
@@ -663,7 +655,6 @@ sstf:
 
 ```javascript
 this.setState((state, props) => { return { | }});
-
 ```
 ---
 
