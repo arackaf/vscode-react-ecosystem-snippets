@@ -40,7 +40,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
 | `rcfc→`   | class component skeleton that contains all the lifecycle methods |
-| `ctor→`    | class default constructor with props|
+| `ctor→`   | class default constructor with props|
 | `cwm→`    | componentWillMount method |
 | `cdm→`    | componentDidMount method |
 | `cwr→`    | componentWillReceiveProps method |
@@ -51,11 +51,23 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `ren→`    | render method |
 | `sst→`    | this.setState with object as parameter |
 | `sstf→`   | this.setState with function as parameter |
+| `danger→` | dangerouslySetInnerHtml template|
 
-The following table lists all the snippets that can be used for prop types.
-Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
-On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
-For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates the ```PropTypes.array.isRequired```
+The following table lists the supported MobX snippets.
+They all begin with ```mob``` so it's easy to explore all available options.
+
+| `mobimp→` | Basic MobX imports |
+| `mobimpf→`| Full MobX imports |
+| `mobactp→`| MobX action property |
+| `mobactm→`| MobX action method |
+| `mobobs→` | MobX observable property |
+| `mobcom→` | MobX computed property |
+
+The following table lists the supported prop type snippets.
+They all begin with ```pt``` so it's easy to explore all available options.
+
+Each prop type snippet has an equivalent for when the property is required.
+For example ```pta``` creates ```PropTypes.array``` while ```ptar``` creates ```PropTypes.array.isRequired```
 
 | Trigger  | Content |
 | -------: | ------- |
@@ -248,7 +260,7 @@ rsc:
 ```javascript
 import React from 'react';
 
-export default ({yourProps}) => (
+export default (yourProps) => (
     <div>
         |
     </div>
@@ -261,7 +273,7 @@ rscb:
 ```javascript
 import React from 'react';
 
-export default ({yourProps}) => {
+export default (yourProps) => {
     return (
         <div>
             |
@@ -274,7 +286,7 @@ export default ({yourProps}) => {
 rjsc:
 
 ```javascript
-const YourComponentName = ({yourProps}) => (
+const YourComponentName = (yourProps) => (
     <div>
         |
     </div>
@@ -285,7 +297,7 @@ const YourComponentName = ({yourProps}) => (
 rjscb:
 
 ```javascript
-const YourComponentName = ({yourProps}) => {
+const YourComponentName = (yourProps) => {
     return (
         <div>
             |
@@ -300,7 +312,7 @@ rscp:
 ```javascript
 import React, {PropTypes} from 'react';
 
-const YourComponentName = ({yourProps}) => (
+const YourComponentName = (yourProps) => (
     <div>
         |
     </div>
@@ -319,7 +331,7 @@ rscbp:
 ```javascript
 import React, {PropTypes} from 'react';
 
-const YourComponentName = ({yourProps}) => {
+const YourComponentName = (yourProps) => {
     return (
         <div>
             |
@@ -338,7 +350,7 @@ export default YourComponentName;
 rjscp:
 
 ```javascript
-const YourComponentName = ({yourProps}) => (
+const YourComponentName = (yourProps) => (
     <div>
         |
     </div>
@@ -355,7 +367,7 @@ export default YourComponentName;
 rjscbp:
 
 ```javascript
-const YourComponentName = ({yourProps}) => {
+const YourComponentName = (yourProps) => {
     return (
         <div>
             |
@@ -377,7 +389,7 @@ rmsc:
 import React from 'react';
 import {observer} from 'mobx-react';
 
-export default observer(({yourProps}) => (
+export default observer((yourProps) => (
     <div>
         |
     </div>
@@ -391,7 +403,7 @@ rmscb:
 import React from 'react';
 import {observer} from 'mobx-react';
 
-export default observer(({yourProps}) => {
+export default observer((yourProps) => {
     return (
         <div>
             |
@@ -404,7 +416,7 @@ export default observer(({yourProps}) => {
 rmjsc:
 
 ```javascript
-const YourComponentName = observer(({yourProps}) => (
+const YourComponentName = observer((yourProps) => (
     <div>
         |
     </div>
@@ -415,7 +427,7 @@ const YourComponentName = observer(({yourProps}) => (
 rmjscb:
 
 ```javascript
-const YourComponentName = observer(({yourProps}) => {
+const YourComponentName = observer((yourProps) => {
     return (
         <div>
             |
@@ -431,7 +443,7 @@ rmscp:
 import React, {PropTypes} from 'react';
 import {observer} from 'mobx-react';
 
-const YourComponentName = observer(({yourProps}) => (
+const YourComponentName = observer((yourProps) => (
     <div>
         |
     </div>
@@ -451,7 +463,7 @@ rmscbp:
 import React, {PropTypes} from 'react';
 import {observer} from 'mobx-react';
 
-const YourComponentName = observer(({yourProps}) => {
+const YourComponentName = observer((yourProps) => {
     return (
         <div>
             |
@@ -470,7 +482,7 @@ export default YourComponentName;
 rmjscp:
 
 ```javascript
-const YourComponentName = observer(({yourProps}) => (
+const YourComponentName = observer((yourProps) => (
     <div>
         |
     </div>
@@ -487,7 +499,7 @@ YourComponentName.propTypes = {
 rmjscbp:
 
 ```javascript
-const YourComponentName = observer(({yourProps}) => {
+const YourComponentName = observer((yourProps) => {
     return (
         <div>
             |
@@ -655,6 +667,57 @@ sstf:
 
 ```javascript
 this.setState((state, props) => { return { | }});
+```
+---
+
+danger:
+
+```javascript
+dangerouslySetInnerHTML={{__html: |}}
+```
+---
+
+mobimp:
+
+```javascript
+import {action, observable, computed} from 'mobx';
+```
+---
+
+mobimpf:
+
+```javascript
+import {action, observable, computed, autorun, reaction, when, observe, intercept, runInAction, untracked, extendObservable, isObservable, toJS} from 'mobx';
+```
+---
+
+mobactp:
+
+```javascript
+methodName = yourProps => |;
+```
+---
+
+mobactm:
+
+```javascript
+methodName(yourProps){
+        |
+}
+```
+---
+
+mobobs:
+
+```javascript
+@observable ${1:propertyName} = |;
+```
+---
+
+mobcom:
+
+```javascript
+@computed get ${1:propertyName}(){ return |; }
 ```
 ---
 

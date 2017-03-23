@@ -91,8 +91,6 @@
     "description": "Creates just an SFC with PropTypes"
   },
 
-
-
   "reactMobxStateless": {
     "prefix": "rmsc",
     "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer((${1:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));",
@@ -134,14 +132,17 @@
     "description": "Creates just a MobX SFC with prop types"
   },  
 
-
-
-
   "classConstructor": {
     "prefix": "ctor",
     "body": "constructor(props) {\n\tsuper(props);\n\t$0\n}",
     "description": "Adds a default constructor for the class that contains props as arguments"
   },
+
+  "dangerouslySetInnerHtml": {
+    "prefix": "danger",
+    "body": "dangerouslySetInnerHTML={{__html: $0}}",
+    "description": "Dangerously set inner html"
+  },  
 
   "componentWillMount": {
     "prefix": "cwm",
@@ -202,6 +203,39 @@
     "body": "this.setState((state, props) => { return { $0 }});",
     "description": "Performs a shallow merge of nextState into current state"
   },
+
+
+  "MobxImportsBasic": {
+    "prefix": "mobimp",
+    "body": "import {action, observable, computed} from 'mobx';",
+    "description": "Basic MobX imports"
+  },
+  "MobxImportsFull": {
+    "prefix": "mobimpf",
+    "body": "import {action, observable, computed, autorun, reaction, when, observe, intercept, runInAction, untracked, extendObservable, isObservable, toJS} from 'mobx';",
+    "description": "Pretty much all MobX imports"
+  },
+  "MobxActionClassProperty": {
+    "prefix": "mobactp",
+    "body": "${1:methodName} = ${2:props} => $0;",
+    "description": "MobX action class property"
+  },
+  "MobxActionClassMethod": {
+    "prefix": "mobactm",
+    "body": "${1:methodName}(${2:props}){\n\t\t$0\n}",
+    "description": "MobX action class method"
+  },
+  "MobxObservableProperty": {
+    "prefix": "mobobs",
+    "body": "@observable ${1:propertyName} = $0;",
+    "description": "MobX observable property"
+  },
+  "MobxComputedProperty": {
+    "prefix": "mobcom",
+    "body": "@computed get ${1:propertyName}(){ return $0; }",
+    "description": "MobX computed property"
+  },
+
 
   "propTypeArray": {
     "prefix": "pta",

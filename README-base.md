@@ -40,7 +40,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
 | `rcfc→`   | class component skeleton that contains all the lifecycle methods |
-| `ctor→`    | class default constructor with props|
+| `ctor→`   | class default constructor with props|
 | `cwm→`    | componentWillMount method |
 | `cdm→`    | componentDidMount method |
 | `cwr→`    | componentWillReceiveProps method |
@@ -51,11 +51,23 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `ren→`    | render method |
 | `sst→`    | this.setState with object as parameter |
 | `sstf→`   | this.setState with function as parameter |
+| `danger→` | dangerouslySetInnerHtml template|
 
-The following table lists all the snippets that can be used for prop types.
-Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
-On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
-For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates the ```PropTypes.array.isRequired```
+The following table lists the supported MobX snippets.
+They all begin with ```mob``` so it's easy to explore all available options.
+
+| `mobimp→` | Basic MobX imports |
+| `mobimpf→`| Full MobX imports |
+| `mobactp→`| MobX action property |
+| `mobactm→`| MobX action method |
+| `mobobs→` | MobX observable property |
+| `mobcom→` | MobX computed property |
+
+The following table lists the supported prop type snippets.
+They all begin with ```pt``` so it's easy to explore all available options.
+
+Each prop type snippet has an equivalent for when the property is required.
+For example ```pta``` creates ```PropTypes.array``` while ```ptar``` creates ```PropTypes.array.isRequired```
 
 | Trigger  | Content |
 | -------: | ------- |
