@@ -56,8 +56,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 The following table lists the supported MobX snippets.
 They all begin with ```mob``` so it's easy to explore all available options.
 
-| Trigger   | Content |
-| -------:  | ------- |
 | `mobimp→` | Basic MobX imports |
 | `mobimpf→`| Full MobX imports |
 | `mobactp→`| MobX action property |
@@ -704,7 +702,7 @@ mobactm:
 
 ```javascript
 methodName(yourProps){
-        |
+    |
 }
 ```
 ---
@@ -712,14 +710,14 @@ methodName(yourProps){
 mobobs:
 
 ```javascript
-@observable ${1:propertyName} = |;
+@observable propertyName = |;
 ```
 ---
 
 mobcom:
 
 ```javascript
-@computed get ${1:propertyName}(){ return |; }
+@computed get propertyName(){ return |; }
 ```
 ---
 
