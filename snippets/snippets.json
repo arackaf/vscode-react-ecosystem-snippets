@@ -222,7 +222,7 @@
   },
   "MobxActionClassMethod": {
     "prefix": "mobactm",
-    "body": "${1:methodName}(${2:props}){\n\t\t$0\n}",
+    "body": "${1:methodName}(${2:props}){\n\t$0\n}",
     "description": "MobX action class method"
   },
   "MobxObservableProperty": {
