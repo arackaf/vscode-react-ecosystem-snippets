@@ -232,7 +232,7 @@
   },
   "MobxComputedProperty": {
     "prefix": "mobcom",
-    "body": "@computed get ${1:propertyName}(){ return $0; }",
+    "body": "@computed get ${1:propertyName}() { return $0; }",
     "description": "MobX computed property"
   },
 

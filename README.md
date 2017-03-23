@@ -719,7 +719,7 @@ mobobs:
 mobcom:
 
 ```javascript
-@computed get propertyName(){ return |; }
+@computed get propertyName() { return |; }
 ```
 ---
 

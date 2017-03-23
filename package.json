@@ -1,7 +1,7 @@
 {
   "name": "react-ecosystem-snippets",
   "description": "Code snippets for Reactjs development",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "displayName": "React Ecosystem Snippets",
   "publisher": "adamrackis",
   "icon": "images/react.png",
