@@ -693,16 +693,31 @@ import {action, observable, computed, autorun, reaction, when, observe, intercep
 ```
 ---
 
+mobrimp:
+
+```javascript
+import {observer} from 'mobx-react';
+```
+---
+
+mobrimpf:
+
+```javascript
+import {observer, Provider, inject} from 'mobx-react';
+```
+---
+
 mobactp:
 
 ```javascript
-methodName = yourProps => |;
+@action methodName = yourProps => |;
 ```
 ---
 
 mobactm:
 
 ```javascript
+@action
 methodName(yourProps) {
     |
 }
