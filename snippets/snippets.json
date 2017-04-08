@@ -146,7 +146,7 @@
 
   "componentWillMount": {
     "prefix": "cwm",
-    "body": "\ncomponentWillMount() {\n\t$0\n}",
+    "body": "componentWillMount() {\n\t$0\n}",
     "description": "Invoked once, both on the client and server, immediately before the initial rendering occurs"
   },
 

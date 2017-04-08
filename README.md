@@ -584,7 +584,6 @@ constructor(props) {
 cwm:
 
 ```javascript
-
 componentWillMount() {
     |
 }
