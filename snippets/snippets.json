@@ -9,6 +9,16 @@
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates just a React component class"
   },
+  "reactTsClassCompoment": {
+    "prefix": "rtscc",
+    "body": "import React, {Component} from 'react';\n\nexport default class ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a React TypeScript component class with default export"
+  },
+  "reactJustTsClassCompoment": {
+    "prefix": "rjtscc",
+    "body": "class ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates just a React TypeScript component class"
+  },
 
   "reactMobxClassCompoment": {
     "prefix": "rmcc",
@@ -20,7 +30,17 @@
     "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates just a MobX React component class"
   },
-  
+  "reactMobxTsClassCompoment": {
+    "prefix": "rmtscc",
+    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a MobX React component class with default export"
+  },
+  "reactMobxJustTsClassCompoment": {
+    "prefix": "rmjtscc",
+    "body": "@observer\nclass ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates just a MobX React component class"
+  },
+
 
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",

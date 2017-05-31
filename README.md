@@ -90,6 +90,38 @@ class YourComponentName extends Component {
 ```
 ---
 
+rtscc:
+
+```javascript
+import React, {Component} from 'react';
+
+export default class YourComponentName extends Component<propType, stateType> {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rjtscc:
+
+```javascript
+class YourComponentName extends Component<propType, stateType> {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
 rmcc:
 
 ```javascript
@@ -114,6 +146,41 @@ rmjcc:
 ```javascript
 @observer
 class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rmtscc:
+
+```javascript
+import React, {Component} from 'react';
+import {observer} from 'mobx-react';
+
+@observer
+export default class YourComponentName extends Component<propType, stateType> {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rmjtscc:
+
+```javascript
+@observer
+class YourComponentName extends Component<propType, stateType> {
     render() {
         return (
             <div>

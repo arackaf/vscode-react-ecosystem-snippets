@@ -1,5 +1,5 @@
 var docsItems = [
-    'rcc', 'rjcc', 'rmcc', 'rmjcc', 'rsc', 'rscb', 'rjsc', 'rjscb', 'rmsc', 'rmscb', 
+    'rcc', 'rjcc', 'rtscc', 'rjtscc', 'rmcc', 'rmjcc', 'rmtscc', 'rmjtscc', 'rsc', 'rscb', 'rjsc', 'rjscb', 'rmsc', 'rmscb', 
     'rmjsc', 'rmjscb', 'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 
     'ren', 'sst', 'sstf', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 
     'mobactm', 'mobobs', 'mobcom'
@@ -24,5 +24,7 @@ function snippetToDisplay(snippetBody){
                 .replace(/\${1:propertyName}/g, 'propertyName')
                 .replace(/\${1:props}/g, propsText)
                 .replace(/\${2:props}/g, propsText)
+                .replace(/\${2:any}/g, 'propType')
+                .replace(/\${3:any}/g, 'stateType')
                 .replace(/\$0/g, '|');
 }
