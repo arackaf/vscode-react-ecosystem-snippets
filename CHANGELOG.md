@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.3
+
+More docs tweaks. Sorry for the version churn. 
+
 ## 0.2.2
 
 Updating the readme for previously added TypeScript snippets
