@@ -1,4 +1,5 @@
 # Change Log
 
-This project adheres to [Semantic Versioning](http://semver.org/).  
-Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/xabikos/vscode-react/releases) page.
+## 0.2.0
+
+I'm removing all of the PropTypes options.  PropTypes are deprecated in the main React repo, in favor of the external prop-types package.  Rather than continue to generate potentially invalid code, I'll just remove them, and leave it to other extensions to provide them as needed.
