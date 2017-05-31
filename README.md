@@ -234,7 +234,7 @@ const YourComponentName = observer((yourProps) => {
 rcfc:
 
 ```javascript
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 export default class YourComponentName extends Component {
     constructor(props) {
@@ -278,10 +278,6 @@ export default class YourComponentName extends Component {
         );
     }
 }
-
-YourComponentName.propTypes = {
-
-};
 ```
 ---
 
