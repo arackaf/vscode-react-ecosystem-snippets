@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2
+
+Updating the readme for previously added TypeScript snippets
+
 ## 0.2.1
 
 Adding some TypeScript snippets for plain React, and MobX React class components

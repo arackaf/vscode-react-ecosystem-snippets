@@ -17,8 +17,12 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | -------:  | ------- |
 | `rcc→`    | class component default export skeleton |
 | `rjcc→`   | class component skeleton without import of default export |
+| `rtscc→`  | TypeScript class component default export skeleton |
+| `rjtscc→` | TypeScript class component skeleton without import of default export |
 | `rmcc→`   | mobx class component default export skeleton |
 | `rmjcc→`  | mobx class component skeleton without import or default export |
+| `rmtscc→` | TypeScript mobx class component default export skeleton |
+| `rmjtscc→`| TypeScript mobx class component skeleton without import or default export |
 | `rsc→`    | inline SFC default export skeleton |
 | `rscb→`   | SFC default export skeleton |
 | `rjsc→`   | inline SFC without import or export |
