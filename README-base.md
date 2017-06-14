@@ -40,7 +40,7 @@ Of course not all of those permutations exist for all snippets; for example, the
 | `rtsjcc`  | TypeScript class component skeleton without import of default export |
 | `rtsmjcc` | TypeScript MobX observer class component skeleton without import or default export |
 | `rtsmijcc`| TypeScript MobX inject and observer class component skeleton without import or default export |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rsc`     | inline SFC default export skeleton |
 | `rmsc`    | MobX inline SFC default export skeleton |
 |           | -----------------------------------------------------------------------------------------------

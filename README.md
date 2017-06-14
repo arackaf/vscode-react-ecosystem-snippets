@@ -43,7 +43,7 @@ Of course not all of those permutations exist for all snippets; for example, the
 |           | -----------------------------------------------------------------------------------------------
 | `rsc`     | inline SFC default export skeleton |
 | `rmsc`    | MobX inline SFC default export skeleton |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rjsc`    | inline SFC without import or export |
 | `rmjsc`   | MobX inline SFC without import or export |
 |           | -----------------------------------------------------------------------------------------------
