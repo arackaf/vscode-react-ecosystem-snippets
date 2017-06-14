@@ -20,6 +20,7 @@ function snippetToDisplay(snippetBody){
     return snippetBody
                 .replace(/\t/g, '    ')
                 .replace(/\${1:componentName}/g, 'YourComponentName')
+                .replace(/\${2:componentName}/g, 'YourComponentName')
                 .replace(/\${1:methodName}/g, 'methodName')
                 .replace(/\${1:propertyName}/g, 'propertyName')
                 .replace(/\${1:props}/g, propsText)

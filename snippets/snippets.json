@@ -25,9 +25,19 @@
     "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a MobX React component class with default export"
   },
+  "reactMobxIClassCompoment": {
+    "prefix": "rmicc",
+    "body": "import React, {Component} from 'react';\nimport {observer, inject} from 'mobx-react';\n\n@inject(${1:injectedProps})\n@observer\nexport default class ${2:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a MobX React component class with default export"
+  },
   "reactMobxJustClassCompoment": {
     "prefix": "rmjcc",
     "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates just a MobX React component class"
+  },
+  "reactMobxIJustClassCompoment": {
+    "prefix": "rmijcc",
+    "body": "@inject(${1:injectedProps})\n@observer\nclass ${2:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates just a MobX React component class"
   },
   "reactMobxTsClassCompoment": {
@@ -35,9 +45,19 @@
     "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a MobX React component class with default export"
   },
+  "reactMobxITsClassCompoment": {
+    "prefix": "rtsmicc",
+    "body": "import React, {Component} from 'react';\nimport {observer, inject} from 'mobx-react';\n\n@inject(${1:injectedProps})\n@observer\nexport default class ${2:componentName} extends Component<${3:any}, ${4:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a MobX React component class with default export"
+  },
   "reactMobxJustTsClassCompoment": {
     "prefix": "rtsmjcc",
     "body": "@observer\nclass ${1:componentName} extends Component<${2:any}, ${3:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates just a MobX React component class"
+  },
+  "reactMobxIJustTsClassCompoment": {
+    "prefix": "rtsmijcc",
+    "body": "@inject(${1:injectedProps})\n@observer\nclass ${2:componentName} extends Component<${3:any}, ${4:any}> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates just a MobX React component class"
   },
 
