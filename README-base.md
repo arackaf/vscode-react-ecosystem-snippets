@@ -10,7 +10,7 @@ In order to install this extension, just search for `React Ecosystem Snippets` f
 
 ## Snippets pattern
 
-The class component snippets often have multiple versions, covering vanilla React, MobX, and where appropriate, TypeScript. These snippets follow the following pattern.  They all start with `r`, followed by the rest of the command.  If there are MobX versions, there will be an `m` or `mi` immediately after the `r`.  If there's a TypeScript version, there will be a `ts` immediately after the `r`.  If there's a version using both MobX and TypeScript, it'll be `rtsm` followed by the rest of the command. 
+The class component snippets often have multiple versions, covering vanilla React; MobX; and where appropriate, TypeScript. These snippets follow the following pattern.  They all start with `r`, followed by the rest of the command.  If there are MobX versions, there will be an `m` or `mi` immediately after the `r`.  If there's a TypeScript version, there will be a `ts` immediately after the `r`.  If there's a version using both MobX and TypeScript, it'll be `rtsm` or `rtsmi` followed by the rest of the command. 
 
 For example: 
 
@@ -33,26 +33,26 @@ Of course not all of those permutations exist for all snippets; for example, the
 | `rtscc`   | TypeScript class component default export skeleton |
 | `rtsmcc`  | TypeScript MobX observer class component default export skeleton |
 | `rtsmicc` | TypeScript MobX inject and observer class component default export skeleton |
-|           |
+|           | ----------------------------------------------------------------------------------------------- 
 | `rjcc`    | class component skeleton without import of default export |
 | `rmjcc`   | MobX observer class component skeleton without import or default export |
 | `rmijcc`  | MobX inject and observer class component skeleton without import or default export |
 | `rtsjcc`  | TypeScript class component skeleton without import of default export |
 | `rtsmjcc` | TypeScript MobX observer class component skeleton without import or default export |
 | `rtsmijcc`| TypeScript MobX inject and observer class component skeleton without import or default export |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rsc`     | inline SFC default export skeleton |
 | `rmsc`    | MobX inline SFC default export skeleton |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rjsc`    | inline SFC without import or export |
 | `rmjsc`   | MobX inline SFC without import or export |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rscb`    | SFC with braces default export skeleton |
 | `rmscb`   | MobX SFC with braces with default export skeleton |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rjscb`   | SFC with braces without import or export |
 | `rmjscb`  | MobX SFC without import or export |
-|           |
+|           | -----------------------------------------------------------------------------------------------
 | `rcfc`    | class component skeleton that contains all the lifecycle methods |
 | `ctor`    | class default constructor with props|
 | `cwm`     | componentWillMount method |
