@@ -1,5 +1,5 @@
 var docsItems = [
-    'rcc', 'rjcc', 'rtscc', 'rjtscc', 'rmcc', 'rmjcc', 'rmtscc', 'rmjtscc', 'rsc', 'rscb', 'rjsc', 'rjscb', 'rmsc', 'rmscb', 
+    'rcc', 'rjcc', 'rtscc', 'rtsjcc', 'rmcc', 'rmjcc', 'rtsmcc', 'rtsmjcc', 'rsc', 'rscb', 'rjsc', 'rjscb', 'rmsc', 'rmscb', 
     'rmjsc', 'rmjscb', 'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 
     'ren', 'sst', 'sstf', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 
     'mobactm', 'mobobs', 'mobcom'
