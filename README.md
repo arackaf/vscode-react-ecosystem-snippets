@@ -1,6 +1,6 @@
 # VS Code React Ecosystem Snippets
 
-This is a fork from https://github.com/xabikos/vscode-react. My version modifies the export styles to be inline; adds more React snippets—options for inline (braceless) SFCs, more options for React skeletons without import or export statements, more options for React components with prop types; and begins to add snippets for the surrounding React ecosystem, for now just MobX, with Redux coming soon.
+This is a fork from https://github.com/xabikos/vscode-react. My version modifies the export styles to be inline; adds more React snippets—options for inline (braceless) SFCs, more options for React skeletons without import or export statements; and adds TypeScript and MobX snippets.
 
 ---
 
@@ -120,6 +120,26 @@ export default class YourComponentName extends Component {
 ```
 ---
 
+rmicc:
+
+```javascript
+import React, {Component} from 'react';
+import {observer, inject} from 'mobx-react';
+
+@inject('injectedProps')
+@observer
+export default class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
 rtscc:
 
 ```javascript
@@ -145,6 +165,26 @@ import {observer} from 'mobx-react';
 
 @observer
 export default class YourComponentName extends Component<propType, stateType> {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rtsmicc:
+
+```javascript
+import React, {Component} from 'react';
+import {observer, inject} from 'mobx-react';
+
+@inject('injectedProps')
+@observer
+export default class YourComponentName extends Component<stateType, ${4:any}> {
     render() {
         return (
             <div>
@@ -187,6 +227,23 @@ class YourComponentName extends Component {
 ```
 ---
 
+rmijcc:
+
+```javascript
+@inject('injectedProps')
+@observer
+class YourComponentName extends Component {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
 rtsjcc:
 
 ```javascript
@@ -207,6 +264,23 @@ rtsmjcc:
 ```javascript
 @observer
 class YourComponentName extends Component<propType, stateType> {
+    render() {
+        return (
+            <div>
+                |
+            </div>
+        );
+    }
+}
+```
+---
+
+rtsmijcc:
+
+```javascript
+@inject('injectedProps')
+@observer
+class YourComponentName extends Component<stateType, ${4:any}> {
     render() {
         return (
             <div>
@@ -463,7 +537,7 @@ render() {
 sst:
 
 ```javascript
-this.setState(|);
+this.setState({|});
 ```
 ---
 

@@ -1,8 +1,7 @@
 var docsItems = [
-    'rcc', 'rmcc', 'rtscc', 'rtsmcc', 'rjcc', 'rmjcc', 'rtsjcc', 'rtsmjcc', 'rsc', 'rmsc', 'rjsc', 'rmjsc', 
-    'rscb', 'rmscb', 'rjscb', 'rmjscb', 'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 
-    'ren', 'sst', 'sstf', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 
-    'mobactm', 'mobobs', 'mobcom'
+    'rcc', 'rmcc', 'rmicc', 'rtscc', 'rtsmcc', 'rtsmicc', 'rjcc', 'rmjcc', 'rmijcc', 'rtsjcc', 'rtsmjcc', 'rtsmijcc', 
+    'rsc', 'rmsc', 'rjsc', 'rmjsc', 'rscb', 'rmscb', 'rjscb', 'rmjscb', 'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 
+    'ren', 'sst', 'sstf', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 'mobactm', 'mobobs', 'mobcom'
 ];
 
 var fs = require('fs');
@@ -23,6 +22,9 @@ function snippetToDisplay(snippetBody){
                 .replace(/\${2:componentName}/g, 'YourComponentName')
                 .replace(/\${1:methodName}/g, 'methodName')
                 .replace(/\${1:propertyName}/g, 'propertyName')
+                .replace(/\${0:injectedProps}/g, "'injectedProps'")
+                .replace(/\${1:injectedProps}/g, "'injectedProps'")
+
                 .replace(/\${1:props}/g, propsText)
                 .replace(/\${2:props}/g, propsText)
                 .replace(/\${2:any}/g, 'propType')
