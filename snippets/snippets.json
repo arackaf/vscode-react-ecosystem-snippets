@@ -174,15 +174,21 @@
 
   "componentSetStateObject": {
     "prefix": "sst",
-    "body": "this.setState({$0});",
+    "body": "this.setState({${1:newState}});$0",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
   "componentSetStateFunc": {
     "prefix": "sstf",
-    "body": "this.setState((state, props) => { return { $0 }});",
+    "body": "this.setState((state, props) => ({${1:newState}}));$0",
     "description": "Performs a shallow merge of nextState into current state"
   },
+
+  "componentSetStateFuncFull": {
+    "prefix": "sstff",
+    "body": "this.setState((state, props) => { return {${1:newState}} });$0",
+    "description": "Performs a shallow merge of nextState into current state"
+  },  
 
 
   "MobxImportsBasic": {

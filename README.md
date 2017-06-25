@@ -64,7 +64,8 @@ Of course not all of those permutations exist for all snippets; for example, the
 | `cwun`    | componentWillUnmount method |
 | `ren`     | render method |
 | `sst`     | this.setState with object as parameter |
-| `sstf`    | this.setState with function as parameter |
+| `sstf`    | this.setState with inline function as parameter |
+| `sstff`   | this.setState with function as parameter |
 | `danger`  | dangerouslySetInnerHtml template|
 
 The following table lists the supported MobX snippets.
@@ -537,14 +538,21 @@ render() {
 sst:
 
 ```javascript
-this.setState({|});
+this.setState({newState});|
 ```
 ---
 
 sstf:
 
 ```javascript
-this.setState((state, props) => { return { | }});
+this.setState((state, props) => ({newState}));|
+```
+---
+
+sstff:
+
+```javascript
+this.setState((state, props) => { return {newState} });|
 ```
 ---
 

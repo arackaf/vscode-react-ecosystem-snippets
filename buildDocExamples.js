@@ -1,7 +1,7 @@
 var docsItems = [
     'rcc', 'rmcc', 'rmicc', 'rtscc', 'rtsmcc', 'rtsmicc', 'rjcc', 'rmjcc', 'rmijcc', 'rtsjcc', 'rtsmjcc', 'rtsmijcc', 
     'rsc', 'rmsc', 'rjsc', 'rmjsc', 'rscb', 'rmscb', 'rjscb', 'rmjscb', 'rcfc', 'ctor', 'cwm', 'cdm', 'cwr', 'scu', 'cwup', 'cdup', 'cwun', 
-    'ren', 'sst', 'sstf', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 'mobactm', 'mobobs', 'mobcom'
+    'ren', 'sst', 'sstf', 'sstff', 'danger', 'mobimp', 'mobimpf', 'mobrimp', 'mobrimpf', 'mobactp', 'mobactm', 'mobobs', 'mobcom'
 ];
 
 var fs = require('fs');
@@ -25,6 +25,7 @@ function snippetToDisplay(snippetBody){
                 .replace(/\${0:injectedProps}/g, "'injectedProps'")
                 .replace(/\${1:injectedProps}/g, "'injectedProps'")
 
+                .replace(/\${1:newState}/g, 'newState')
                 .replace(/\${1:props}/g, propsText)
                 .replace(/\${2:props}/g, propsText)
                 .replace(/\${2:any}/g, 'propType')
