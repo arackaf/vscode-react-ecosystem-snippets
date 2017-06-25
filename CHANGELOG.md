@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.8
+
+Update `sstf` (setState function) to use an inline function, add a `sstff` snippet for a non-inline function
+
 ## 0.2.7
 
 Last tweaks to the docs, this time the generated code samples.
